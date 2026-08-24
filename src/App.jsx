@@ -11,19 +11,19 @@ export default function App() {
   const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
-    // 1.5s fade/scale + 1.0s hold = 2.5s before triggering upward exit slide
+    // Snappy, elegant 1.1s initial loader for fast page performance
     const timer = setTimeout(() => {
       setIsLoading(false)
-    }, 2500)
+    }, 1100)
 
     return () => clearTimeout(timer)
   }, [])
 
   return (
     <div className="relative min-h-screen bg-floral-ambient text-[#2C221B] font-sans antialiased overflow-x-hidden selection:bg-[#E8D7BE] selection:text-[#2C221B]">
-      {/* Initial Loader with AnimatePresence for graceful exit */}
+      {/* Fast & Fluid Initial Loader */}
       <AnimatePresence mode="wait">
-        {isLoading && <InitialLoader key="loader" />}
+        {isLoading && <InitialLoader key="loader" onDismiss={() => setIsLoading(false)} />}
       </AnimatePresence>
 
       {/* Animated Floral Background & Floating Petals */}

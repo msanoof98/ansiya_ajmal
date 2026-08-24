@@ -36,19 +36,19 @@ export default function HeroSection() {
   }, [])
 
   return (
-    <section className="relative min-h-[92vh] flex flex-col items-center justify-between px-4 sm:px-6 pt-20 sm:pt-28 pb-10 sm:pb-12 overflow-hidden">
+    <section className="relative min-h-[90vh] flex flex-col items-center justify-between px-4 sm:px-6 pt-10 sm:pt-20 pb-8 sm:pb-12 overflow-hidden">
       
       {/* Top Islamic Calligraphy & Bismillah Medallion */}
       <motion.div
-        initial={{ opacity: 0, y: -20 }}
+        initial={{ opacity: 0, y: -15 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.2, duration: 1.1, ease: [0.22, 1, 0.36, 1] }}
+        transition={{ delay: 0.1, duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
         className="relative z-10 flex flex-col items-center text-center max-w-xl mx-auto"
       >
         {/* Ornate Arch Frame for Bismillah */}
-        <div className="px-6 sm:px-8 py-3 sm:py-3.5 rounded-full border border-[#C5A059]/40 bg-[#FFFDF9]/85 backdrop-blur-md shadow-sm flex items-center justify-center">
+        <div className="px-6 sm:px-8 py-2.5 sm:py-3.5 rounded-full border border-[#C5A059]/40 bg-[#FFFDF9]/90 backdrop-blur-md shadow-sm flex items-center justify-center">
           <span 
-            className="font-arabic text-xl sm:text-2xl md:text-3xl text-[#C5A059] tracking-wide leading-relaxed" 
+            className="font-arabic text-lg sm:text-2xl md:text-3xl text-[#C5A059] tracking-wide leading-relaxed" 
             dir="rtl"
             lang="ar"
           >
@@ -57,7 +57,7 @@ export default function HeroSection() {
         </div>
 
         {/* Quranic Verse on Marriage */}
-        <div className="mt-4 sm:mt-5 px-3 sm:px-4">
+        <div className="mt-3.5 sm:mt-5 px-2 sm:px-4">
           <p 
             className="font-arabic text-sm sm:text-base md:text-lg text-[#54463C] leading-loose" 
             dir="rtl"
@@ -65,71 +65,71 @@ export default function HeroSection() {
           >
             « وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً »
           </p>
-          <p className="font-serif italic text-xs sm:text-[13px] text-[#7A6B60] mt-1.5 leading-relaxed max-w-md mx-auto">
+          <p className="font-serif italic text-xs sm:text-[13px] text-[#7A6B60] mt-1 leading-relaxed max-w-md mx-auto">
             “And of His signs is that He created for you mates from among yourselves, that you may dwell in tranquility with them; and He placed between you affection and mercy.”
           </p>
-          <p className="font-sans text-[10px] tracking-[0.22em] uppercase text-[#A37F3B] mt-1 font-semibold">
+          <p className="font-sans text-[9px] sm:text-[10px] tracking-[0.2em] uppercase text-[#A37F3B] mt-1 font-semibold">
             Surah Ar-Rum • 30:21
           </p>
         </div>
       </motion.div>
 
       {/* Central Couple Display */}
-      <div className="relative z-10 max-w-4xl mx-auto text-center flex flex-col items-center my-4 sm:my-6">
+      <div className="relative z-10 max-w-4xl mx-auto text-center flex flex-col items-center my-3 sm:my-6">
         
         {/* Pretitle */}
         <motion.div
-          initial={{ opacity: 0, y: 15 }}
+          initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.5, duration: 1.0 }}
-          className="flex items-center gap-2.5 sm:gap-3 font-cinzel text-[10px] sm:text-xs uppercase tracking-[0.25em] text-[#A37F3B] font-semibold mb-2 sm:mb-3"
+          transition={{ delay: 0.3, duration: 0.8 }}
+          className="flex items-center gap-2 sm:gap-3 font-cinzel text-[9px] sm:text-xs uppercase tracking-[0.22em] text-[#A37F3B] font-semibold mb-1.5 sm:mb-3"
         >
-          <span className="w-6 sm:w-8 h-px bg-[#C5A059]/40" />
+          <span className="w-5 sm:w-8 h-px bg-[#C5A059]/40" />
           <span>The Nikkah Celebration</span>
-          <span className="w-6 sm:w-8 h-px bg-[#C5A059]/40" />
+          <span className="w-5 sm:w-8 h-px bg-[#C5A059]/40" />
         </motion.div>
 
         {/* Upward Mask Stagger Reveal for Couple's Names */}
-        <div className="overflow-hidden py-1 sm:py-2 px-2 sm:px-4">
+        <div className="overflow-hidden py-1 px-2 sm:px-4">
           <motion.h1
             initial={{ y: '110%' }}
             animate={{ y: 0 }}
             transition={{
-              delay: 0.7,
-              duration: 1.3,
+              delay: 0.4,
+              duration: 1.0,
               ease: [0.16, 1, 0.3, 1],
             }}
-            className="font-serif font-light text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-[#2C221B] tracking-tight leading-[1.05]"
+            className="font-serif font-light text-4xl sm:text-7xl md:text-8xl lg:text-9xl text-[#2C221B] tracking-tight leading-[1.08]"
           >
-            Ansiya <span className="font-serif italic font-normal text-[#C5A059] text-4xl sm:text-6xl md:text-7xl lg:text-8xl px-1 sm:px-2">&amp;</span> Ajmal
+            Ansiya <span className="font-serif italic font-normal text-[#C5A059] text-3xl sm:text-6xl md:text-7xl lg:text-8xl px-1">&amp;</span> Ajmal
           </motion.h1>
         </div>
 
         {/* Dual Calendar Badge: Georgian + Hijri */}
         <motion.div
-          initial={{ opacity: 0, y: 15 }}
+          initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.9, duration: 1.0 }}
-          className="mt-4 sm:mt-6 flex flex-wrap items-center justify-center gap-2 sm:gap-3.5 text-xs font-sans tracking-[0.14em] sm:tracking-[0.18em] uppercase"
+          transition={{ delay: 0.5, duration: 0.8 }}
+          className="mt-3.5 sm:mt-5 flex flex-wrap items-center justify-center gap-2 sm:gap-3 text-[11px] sm:text-xs font-sans tracking-[0.14em] uppercase"
         >
-          <span className="flex items-center gap-1.5 text-[#A37F3B] font-semibold bg-[#FFFDF9]/90 px-3.5 sm:px-4 py-1.5 rounded-full border border-[#C5A059]/40 shadow-sm">
+          <span className="flex items-center gap-1.5 text-[#A37F3B] font-semibold bg-[#FFFDF9]/95 px-3.5 py-1.5 rounded-full border border-[#C5A059]/40 shadow-sm">
             <Moon className="w-3.5 h-3.5 text-[#C5A059]" />
             8 Rabi' al-Awwal 1448 AH
           </span>
           <span className="text-[#C5A059] hidden xs:inline">•</span>
-          <span className="flex items-center text-[#2C221B] font-medium bg-[#FFFDF9]/90 px-3.5 sm:px-4 py-1.5 rounded-full border border-[#C5A059]/40 shadow-sm">
+          <span className="flex items-center text-[#2C221B] font-medium bg-[#FFFDF9]/95 px-3.5 py-1.5 rounded-full border border-[#C5A059]/40 shadow-sm">
             Saturday, Sept 19, 2026
           </span>
         </motion.div>
 
-        {/* Typographic Luxury Countdown Ticker (Watchmaker Precision) */}
+        {/* Typographic Luxury Countdown Ticker */}
         <motion.div
-          initial={{ opacity: 0, y: 15 }}
+          initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1.1, duration: 1.0 }}
-          className="mt-6 sm:mt-8 px-5 sm:px-6 py-2 sm:py-2.5 rounded-full bg-[#FFFDF9]/75 border border-[#C5A059]/35 backdrop-blur-md inline-flex items-center gap-2 sm:gap-4 text-xs font-serif text-[#2C221B] shadow-sm"
+          transition={{ delay: 0.6, duration: 0.8 }}
+          className="mt-4 sm:mt-6 px-4 sm:px-6 py-2 sm:py-2.5 rounded-full bg-[#FFFDF9]/80 border border-[#C5A059]/35 backdrop-blur-md inline-flex items-center gap-2 sm:gap-4 text-xs font-serif text-[#2C221B] shadow-sm"
         >
-          <span className="font-sans text-[9px] uppercase tracking-[0.2em] text-[#A37F3B] font-bold">
+          <span className="font-sans text-[8px] sm:text-[9px] uppercase tracking-[0.18em] text-[#A37F3B] font-bold">
             Countdown:
           </span>
           <div className="flex items-center gap-1.5 sm:gap-3 text-xs sm:text-base font-light">
@@ -149,17 +149,17 @@ export default function HeroSection() {
         href="#ceremony"
         initial={{ opacity: 0 }}
         animate={{ opacity: 0.85 }}
-        transition={{ delay: 1.4, duration: 1 }}
-        className="relative z-10 flex flex-col items-center text-[10px] uppercase tracking-[0.22em] text-[#7A6B60] hover:text-[#2C221B] transition-colors mt-2 sm:mt-4 group cursor-pointer"
-        aria-label="Scroll down to Ceremony details and directions"
+        transition={{ delay: 0.8, duration: 0.8 }}
+        className="relative z-10 flex flex-col items-center text-[9px] sm:text-[10px] uppercase tracking-[0.2em] text-[#7A6B60] hover:text-[#2C221B] transition-colors mt-2 group cursor-pointer"
+        aria-label="Scroll to ceremony details"
       >
         <span>View Ceremony &amp; Directions</span>
         <motion.div
-          animate={{ y: [0, 5, 0] }}
+          animate={{ y: [0, 4, 0] }}
           transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
-          className="mt-1.5"
+          className="mt-1"
         >
-          <ChevronDown className="w-4 h-4 text-[#C5A059] group-hover:text-[#2C221B] transition-colors" />
+          <ChevronDown className="w-3.5 h-3.5 text-[#C5A059] group-hover:text-[#2C221B] transition-colors" />
         </motion.div>
       </motion.a>
     </section>
