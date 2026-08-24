@@ -85,7 +85,7 @@ export default function HeroSection() {
           className="flex items-center gap-2 sm:gap-3 font-cinzel text-[9px] sm:text-xs uppercase tracking-[0.22em] text-[#A37F3B] font-semibold mb-1.5 sm:mb-3"
         >
           <span className="w-5 sm:w-8 h-px bg-[#C5A059]/40" />
-          <span>The Nikkah Celebration</span>
+          <span>The Wedding Celebration</span>
           <span className="w-5 sm:w-8 h-px bg-[#C5A059]/40" />
         </motion.div>
 

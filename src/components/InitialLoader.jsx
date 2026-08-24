@@ -50,7 +50,7 @@ export default function InitialLoader({ onDismiss }) {
           </div>
 
           <div className="mt-2 font-sans text-[9px] sm:text-[11px] tracking-widest-luxury uppercase text-[#7A6B60] font-medium">
-            The Nikkah Celebration
+            The Wedding Celebration
           </div>
         </div>
 

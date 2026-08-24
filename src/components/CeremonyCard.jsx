@@ -82,9 +82,9 @@ export default function CeremonyCard() {
 
   // Generate Google Calendar Link
   const googleCalendarUrl = () => {
-    const title = encodeURIComponent('Ansiya & Ajmal Nikkah & Wedding Ceremony')
+    const title = encodeURIComponent('Ansiya & Ajmal Wedding Ceremony')
     const details = encodeURIComponent(
-      'Nikkah Ceremony of Ansiya & Ajmal at Holiday Home (8 Rabi al-Awwal 1448 AH). Directions: https://maps.app.goo.gl/ioLsTzmLjpPHE2y96?g_st=aw'
+      'Wedding Ceremony of Ansiya & Ajmal at Holiday Home (8 Rabi al-Awwal 1448 AH). Directions: https://maps.app.goo.gl/ioLsTzmLjpPHE2y96?g_st=aw'
     )
     const location = encodeURIComponent('Holiday Home')
     const start = '20260919T053000Z'
@@ -180,7 +180,7 @@ export default function CeremonyCard() {
               11:00 AM
             </h4>
             <p className="font-sans text-xs text-[#54463C] mt-1">
-              Nikkah Solemnization
+              Wedding Ceremony
             </p>
             <span className="text-[11px] text-[#7A6B60] mt-1 font-sans font-medium">
               Insha'Allah

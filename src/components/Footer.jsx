@@ -8,8 +8,8 @@ export default function Footer() {
   const handleShare = () => {
     if (navigator.share) {
       navigator.share({
-        title: 'Ansiya & Ajmal Nikkah Invitation',
-        text: 'You are cordially invited to celebrate the Nikkah & Wedding Ceremony of Ansiya & Ajmal on Saturday, September 19, 2026 (8 Rabi al-Awwal 1448 AH).',
+        title: 'Ansiya & Ajmal Wedding Invitation',
+        text: 'You are cordially invited to celebrate the Wedding Ceremony of Ansiya & Ajmal on Saturday, September 19, 2026 (8 Rabi al-Awwal 1448 AH).',
         url: window.location.href,
       }).catch(() => {})
     } else {
@@ -53,7 +53,7 @@ export default function Footer() {
           <span>With Prayers &amp; Gratitude</span>
           <span className="mt-2 sm:mt-0 flex items-center gap-1.5 text-[#A37F3B] font-medium">
             <Moon className="w-3 h-3 text-[#C5A059]" />
-            Nikkah Mubarak
+            Wedding Mubarak
           </span>
         </div>
       </div>
