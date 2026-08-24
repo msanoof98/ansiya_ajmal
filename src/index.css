@@ -1,0 +1,155 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-tap-highlight-color: transparent;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background-color: #F6F1E8;
+    color: #2C221B;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::selection {
+    background: #E8D7BE;
+    color: #1D1611;
+  }
+
+  /* Accessible focus indicators */
+  :focus-visible {
+    outline: 2px solid #C5A059;
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+}
+
+/* Custom delicate scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F6F1E8;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D5C7B5;
+  border-radius: 9999px;
+  border: 1px solid rgba(197, 160, 89, 0.3);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #C5A059;
+}
+
+/* Warm Floral Ambient Background */
+.bg-floral-ambient {
+  background-color: #F6F1E8;
+  background-image: 
+    radial-gradient(at 10% 15%, rgba(232, 215, 190, 0.6) 0px, transparent 55%),
+    radial-gradient(at 90% 10%, rgba(224, 213, 199, 0.5) 0px, transparent 50%),
+    radial-gradient(at 50% 50%, rgba(255, 252, 247, 0.7) 0px, transparent 65%),
+    radial-gradient(at 15% 85%, rgba(235, 222, 203, 0.6) 0px, transparent 50%),
+    radial-gradient(at 85% 85%, rgba(212, 175, 55, 0.12) 0px, transparent 45%);
+}
+
+/* Opulent Warm Glass Card */
+.glass-warm-luxury {
+  background: rgba(255, 252, 247, 0.82);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(197, 160, 89, 0.4);
+  box-shadow: 0 20px 50px -12px rgba(74, 58, 43, 0.09), 0 0 24px 2px rgba(197, 160, 89, 0.12);
+}
+
+/* Floating Gold & Cream Petals Animation */
+@keyframes floatPetal1 {
+  0% {
+    transform: translate(0, -20px) rotate(0deg);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.8;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate(80px, 105vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@keyframes floatPetal2 {
+  0% {
+    transform: translate(0, -20px) rotate(45deg);
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.85;
+  }
+  75% {
+    opacity: 0.85;
+  }
+  100% {
+    transform: translate(-100px, 105vh) rotate(-320deg);
+    opacity: 0;
+  }
+}
+
+@keyframes floatPetal3 {
+  0% {
+    transform: translate(0, -20px) rotate(-30deg);
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.7;
+  }
+  80% {
+    opacity: 0.7;
+  }
+  100% {
+    transform: translate(120px, 105vh) rotate(280deg);
+    opacity: 0;
+  }
+}
+
+.animate-petal-1 {
+  animation: floatPetal1 15s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  will-change: transform, opacity;
+}
+
+.animate-petal-2 {
+  animation: floatPetal2 19s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  will-change: transform, opacity;
+}
+
+.animate-petal-3 {
+  animation: floatPetal3 17s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  will-change: transform, opacity;
+}
+
+/* Accessibility: Respect Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .animate-petal-1,
+  .animate-petal-2,
+  .animate-petal-3,
+  .animate-sway-slow,
+  .animate-sway-reverse {
+    display: none !important;
+  }
+}
