@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { AnimatePresence } from 'framer-motion'
+import { Analytics } from '@vercel/analytics/react'
 import InitialLoader from './components/InitialLoader'
 import FloatingNav from './components/FloatingNav'
 import HeroSection from './components/HeroSection'
@@ -38,6 +39,9 @@ export default function App() {
         </main>
         <Footer />
       </div>
+
+      {/* Vercel Web Analytics */}
+      <Analytics />
     </div>
   )
 }
